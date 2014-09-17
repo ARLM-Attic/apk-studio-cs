@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<completions>
+    <completion label="accelerateDecelerateInterpolator" type="tag">
+        <![CDATA[The rate of change starts and ends slowly but accelerates through the middle.]]>
+    </completion>
+    <completion label="accelerateInterpolator" type="tag">
+        <![CDATA[The rate of change starts out slowly, then accelerates.]]>
+    </completion>
+    <completion label="action" type="tag">
+        <![CDATA[Adds an action to an intent filter. An <i>&lt;intent-filter&gt;</i> element must contain one or more <i>&ltaction&gt;</i> elements. If it doesn't contain any, no Intent objects will get through the filter. See Intents and Intent Filters for details on intent filters and the role of action specifications within a filter.]]>
+    </completion>
+    <completion label="activity" type="tag">
+        <![CDATA[Declares an activity (an <i>Activity</i> subclass) that implements part of the application's visual user interface. All activities must be represented by <i>&lt;activity&gt;</i> elements in the manifest file. Any that are not declared there will not be seen by the system and will never be run.]]>
+    </completion>
+    <completion label="activity-alias" type="tag">
+        <![CDATA[An alias for an activity, named by the targetActivity attribute. The target must be in the same application as the alias and it must be declared before the alias in the manifest.]]>
+    </completion>
+    <completion label="alpha" type="tag">
+        <![CDATA[A fade-in or fade-out animation. Represents an <i>AlphaAnimation</i>.]]>
+    </completion>
+    <completion label="animation-list" type="tag">
+        <![CDATA[A sequence of images in order (like a film).]]>
+    </completion>
+    <completion label="animator" type="tag">
+        <![CDATA[Performs an animation over a specified amount of time. Represents a <i>ValueAnimator</i>.]]>
+    </completion>
+    <completion label="anticipateInterpolator" type="tag">
+        <![CDATA[The change starts backward then flings forward.]]>
+    </completion>
+    <completion label="anticipateOvershootInterpolator" type="tag">
+        <![CDATA[The change starts backward, flings forward and overshoots the target value, then settles at the final value.]]>
+    </completion>
+    <completion label="array" type="tag">
+        <![CDATA[A <i>TypedArray</i> defined in XML. You can use this to create an array of other resources, such as drawables. Note that the array is not required to be homogeneous, so you can create an array of mixed resource types, but you must be aware of what and where the data types are in the array so that you can properly obtain each item with the <i>TypedArray's get...()</i> methods.]]>
+    </completion>
+    <completion label="bool" type="tag">
+        <![CDATA[A boolean value defined in XML.]]>
+    </completion>
+    <completion label="bounceInterpolator" type="tag">
+        <![CDATA[The change bounces at the end.]]>
+    </completion>
+    <completion label="Button" type="tag">
+        <![CDATA[A button consists of text or an icon (or both text and an icon) that communicates what action occurs when the user touches it.]]>
+    </completion>
+    <completion label="category" type="tag">
+        <![CDATA[Adds a category name to an intent filter.]]>
+    </completion>
+    <completion label="color" type="tag">
+        <![CDATA[A color value defined in XML. The color is specified with an RGB value and alpha channel. You can use a color resource any place that accepts a hexadecimal color value.]]>
+    </completion>
+    <completion label="CheckBox" type="tag">
+        <![CDATA[Checkboxes allow the user to select one or more options from a set.]]>
+    </completion>
+    <completion label="compatible-screens" type="tag">
+        <![CDATA[Specifies each screen configuration with which the application is compatible.]]>
+    </completion>
+    <completion label="cycleInterpolator" type="tag">
+        <![CDATA[Repeats the animation for a specified number of cycles. The rate of change follows a sinusoidal pattern.]]>
+    </completion>
+    <completion label="data" type="tag">
+        <![CDATA[Adds a data specification to an intent filter. The specification can be just a data type (the <i>mimeType</i> attribute), just a URI, or both a data type and a URI. A URI is specified by separate attributes for each of its parts.]]>
+    </completion>
+    <completion label="decelerateInterpolator" type="tag">
+        <![CDATA[The rate of change starts out quickly, then decelerates.]]>
+    </completion>
+    <completion label="dimen" type="tag">
+        <![CDATA[A dimension value defined in XML. A dimension is specified with a number followed by a unit of measure. For example: 10px, 2in, 5sp.]]>
+    </completion>
+    <completion label="EditText" type="tag">
+        <![CDATA[A text field allows the user to type text into your app. It can be either single line or multi-line.]]>
+    </completion>
+    <completion label="grant-uri-permission" type="tag">
+        <![CDATA[Specifies which data subsets of the parent content provider permission can be granted for. Data subsets are indicated by the path part of a <i>content:</i> URI. (The authority part of the URI identifies the content provider.)]]>
+    </completion>
+    <completion label="GridView" type="tag">
+        <![CDATA[<i>GridView</i> is a <i>ViewGroup</i> that displays items in a two-dimensional, scrollable grid. The grid items are automatically inserted to the layout using a <i>ListAdapter</i>.]]>
+    </completion>
+    <completion label="group" type="tag">
+        <![CDATA[A menu group (to create a collection of items that share traits, such as whether they are visible, enabled, or checkable). Contains one or more <i>&lt;item&gt;</i> elements. Must be a child of a <i>&lt;menu&gt;</i> element.]]>
+    </completion>
+    <completion label="ImageButton" type="tag">
+        <![CDATA[Image button is <i>Button</i> with an image instead of text.]]>
+    </completion>
+    <completion label="include" type="tag">
+        <![CDATA[Includes a layout file into this layout.]]>
+    </completion>
+    <completion label="instrumentation" type="tag">
+        <![CDATA[Declares an <i>Instrumentation</i> class that enables you to monitor an application's interaction with the system. The Instrumentation object is instantiated before any of the application's components.]]>
+    </completion>
+    <completion label="integer" type="tag">
+        <![CDATA[An integer defined in XML.]]>
+    </completion>
+    <completion label="integer-array" type="tag">
+        <![CDATA[An array of integers defined in XML.]]>
+    </completion>
+    <completion label="intent-filter" type="tag">
+        <![CDATA[Specifies the types of intents that an activity, service, or broadcast receiver can respond to. An intent filter declares the capabilities of its parent component — what an activity or service can do and what types of broadcasts a receiver can handle. It opens the component to receiving intents of the advertised type, while filtering out those that are not meaningful for the component. ]]>
+    </completion>
+    <completion label="item" type="tag">
+        <![CDATA[Represents an item in a resource-list.]]>
+    </completion>
+    <completion label="linearInterpolator" type="tag">
+        <![CDATA[The rate of change is constant.]]>
+    </completion>
+    <completion label="LinearLayout" type="tag">
+        <![CDATA[<i>LinearLayout</i> is a view group that aligns all children in a single direction, vertically or horizontally. You can specify the layout direction with the <i>android:orientation</i> attribute.]]>
+    </completion>
+    <completion label="ListView" type="tag">
+        <![CDATA[<i>ListView</i> is a view group that displays a list of scrollable items. The list items are automatically inserted to the list using an <i>Adapter</i> that pulls content from a source such as an array or database query and converts each item result into a view that's placed into the list.]]>
+    </completion>
+    <completion label="manifest" type="tag">
+        <![CDATA[The root element of the <i>AndroidManifest.xml</i> file. It must contain an <i>&lt;application&gt;</i> element and specify <i>xmlns:android</i> and package attributes.]]>
+    </completion>
+    <completion label="menu" type="tag">
+        <![CDATA[Menus are a common user interface component in many types of applications.]]>
+    </completion>
+    <completion label="merge" type="tag">
+        <![CDATA[An alternative root element that is not drawn in the layout hierarchy. Using this as the root element is useful when you know that this layout will be placed into a layout that already contains the appropriate parent View to contain the children of the <i>&lt;merge&gt;</i> element. This is particularly useful when you plan to include this layout in another layout file using <i>&lt;include&gt;</i> and this layout doesn't require a different <i>ViewGroup</i> container.]]>
+    </completion>
+    <completion label="meta-data" type="tag">
+        <![CDATA[A <i>name-value</i> pair for an item of additional, arbitrary data that can be supplied to the parent component. A component element can contain any number of <i>&lt;meta-data&gt;</i> subelements. The values from all of them are collected in a single <i>Bundle</i> object and made available to the component as the <i>PackageItemInfo.metaData</i> field.]]>
+    </completion>
+    <completion label="objectAnimator" type="tag">
+        <![CDATA[Animates a specific property of an object over a specific amount of time. Represents an <i>ObjectAnimator</i>.]]>
+    </completion>
+    <completion label="overshootInterpolator" type="tag">
+        <![CDATA[The change flings forward and overshoots the last value, then comes back.]]>
+    </completion>
+    <completion label="path-permission" type="tag">
+        <![CDATA[Defines the path and required permissions for a specific subset of data within a content provider. This element can be specified multiple times to supply multiple paths.]]>
+    </completion>
+    <completion label="permission" type="tag">
+        <![CDATA[Declares a security permission that can be used to limit access to specific components or features of this or other applications. See the <i>Permissions</i> section in the introduction, and the <i>Security and Permissions</i> document for more information on how permissions work.]]>
+    </completion>
+    <completion label="permission-group" type="tag">
+        <![CDATA[Declares a name for a logical grouping of related permissions. Individual permission join the group through the permissionGroup attribute of the <i>&lt;permission&gt;</i> element. Members of a group are presented together in the user interface.]]>
+    </completion>
+    <completion label="permission-tree" type="tag">
+        <![CDATA[Declares the base name for a tree of permissions. The application takes ownership of all names within the tree. It can dynamically add new permissions to the tree by calling <i>PackageManager.addPermission()</i>, Names within the tree are separated by periods ('.').]]>
+    </completion>
+    <completion label="plurals" type="tag">
+        <![CDATA[A collection of strings, of which, one string is provided depending on the amount of something. Contains one or more <i>&lt;item&gt;</i> elements.]]>
+    </completion>
+    <completion label="provider" type="tag">
+        <![CDATA[Declares a content provider component. A content provider is a subclass of <i>ContentProvider</i> that supplies structured access to data managed by the application. All content providers in your application must be defined in a <i>&lt;provider&gt;</i> element in the manifest file; otherwise, the system is unaware of them and doesn't run them.]]>
+    </completion>
+    <completion label="RadioButton" type="tag">
+        <![CDATA[Radio buttons allow the user to select one option from a set.]]>
+    </completion>
+    <completion label="RadioGroup" type="tag">
+        <![CDATA[Radio groups ensure that only one radio button can be selected at a time.]]>
+    </completion>
+    <completion label="receiver" type="tag">
+        <![CDATA[Declares a broadcast receiver (a <i>BroadcastReceiver</i> subclass) as one of the application's components. Broadcast receivers enable applications to receive intents that are broadcast by the system or by other applications, even when other components of the application are not running.]]>
+    </completion>
+    <completion label="RelativeLayout" type="tag">
+        <![CDATA[<i>RelativeLayout</i> is a view group that displays child views in relative positions. The position of each view can be specified as relative to sibling elements (such as to the left-of or below another view) or in positions relative to the parent <i>RelativeLayout</i> area (such as aligned to the bottom, left of center).]]>
+    </completion>
+    <completion label="requestFocus" type="tag">
+        <![CDATA[Any element representing a <i>View</i> object can include this empty element, which gives its parent initial focus on the screen. You can have only one of these elements per file.]]>
+    </completion>
+    <completion label="resources" type="tag">
+        <![CDATA[Root node for an android XML resource file.]]>
+    </completion>
+    <completion label="rotate" type="tag">
+        <![CDATA[A rotation animation. Represents a <i>RotateAnimation</i>.]]>
+    </completion>
+    <completion label="scale" type="tag">
+        <![CDATA[A resizing animation. You can specify the center point of the image from which it grows outward (or inward) by specifying <i>pivotX</i> and <i>pivotY</i>. Represents a <i>ScaleAnimation</i>.]]>
+    </completion>
+    <completion label="screen" type="tag">
+        <![CDATA[Specifies a single screen configuration with which the application is compatible.]]>
+    </completion>
+    <completion label="selector" type="tag">
+        <![CDATA[A list of items specifying different/context-specific properties.]]>
+    </completion>
+    <completion label="service" type="tag">
+        <![CDATA[Declares a service (a <i>Service</i> subclass) as one of the application's components. Unlike activities, services lack a visual user interface. They're used to implement long-running background operations or a rich communications API that can be called by other applications.]]>
+    </completion>
+    <completion label="set" type="tag">
+        <![CDATA[A container that holds other animation elements (&lt;objectAnimator&gt;, &lt;valueAnimator&gt;, or other &lt;set&gt; elements). Represents an <i>AnimatorSet</i>.]]>
+    </completion>
+    <completion label="Spinner" type="tag">
+        <![CDATA[Spinners provide a quick way to select one value from a set. In the default state, a spinner shows its currently selected value.]]>
+    </completion>
+    <completion label="string" type="tag">
+        <![CDATA[A string, which can include styling tags. Beware that you must escape apostrophes and quotation marks.]]>
+    </completion>
+    <completion label="string-array" type="tag">
+        <![CDATA[Defines an array of strings. Contains one or more <i>&lt;item&gt;</i> elements.]]>
+    </completion>
+    <completion label="style" type="tag">
+        <![CDATA[Defines a single style. Contains <i>&lt;item&gt;</i> elements.]]>
+    </completion>
+    <completion label="supports-gl-texture" type="tag">
+        <![CDATA[Declares a single GL texture compression format that is supported by the application.]]>
+    </completion>
+    <completion label="supports-screens" type="tag">
+        <![CDATA[Lets you specify the screen sizes your application supports and enable <i>screen compatibility mode</i> for screens larger than what your application supports. It's important that you always use this element in your application to specify the screen sizes your application supports.]]>
+    </completion>
+    <completion label="ToggleButton" type="tag">
+        <![CDATA[A toggle button allows the user to change a setting between two states.]]>
+    </completion>
+    <completion label="translate" type="tag">
+        <![CDATA[A vertical and/or horizontal motion. Supports the following attributes in any of the following three formats: values from -100 to 100 ending with <i>&quot;%&quot;</i>, indicating a percentage relative to itself; values from -100 to 100 ending in <i>&quot;%p&quot;</i>, indicating a percentage relative to its parent; a float value with no suffix, indicating an absolute value. Represents a <i>TranslateAnimation</i>.]]>
+    </completion>
+    <completion label="uses-configuration" type="tag">
+        <![CDATA[Indicates what hardware and software features the application requires. For example, an application might specify that it requires a physical keyboard or a particular navigation device, like a trackball. The specification is used to avoid installing the application on devices where it will not work.]]>
+    </completion>
+    <completion label="uses-feature" type="tag">
+        <![CDATA[Declares a single hardware or software feature that is used by the application.]]>
+    </completion>
+    <completion label="uses-library" type="tag">
+        <![CDATA[Specifies a shared library that the application must be linked against. This element tells the system to include the library's code in the class loader for the package.]]>
+    </completion>
+    <completion label="uses-permission" type="tag">
+        <![CDATA[Requests a permission that the application must be granted in order for it to operate correctly. Permissions are granted by the user when the application is installed, not while it's running.]]>
+    </completion>
+    <completion label="uses-sdk" type="tag">
+        <![CDATA[Lets you express an application's compatibility with one or more versions of the Android platform, by means of an API Level integer. The API Level expressed by an application will be compared to the API Level of a given Android system, which may vary among different Android devices.]]>
+    </completion>
+    <completion label="View" type="tag">
+        <![CDATA[An individual UI component, generally referred to as a <i>&quot;widget&quot;</i>. Different kinds of <i>View</i> objects include <i>TextView</i>, <i>Button</i>, and <i>CheckBox</i>.]]>
+    </completion>
+    <completion label="ViewGroup" type="tag">
+        <![CDATA[A container for other View elements. There are many different kinds of ViewGroup objects and each one lets you specify the layout of the child elements in different ways. Different kinds of <i>ViewGroup</i> objects include <i>LinearLayout</i>, <i>RelativeLayout</i>, and <i>FrameLayout</i>.]]>
+    </completion>
+</completions>

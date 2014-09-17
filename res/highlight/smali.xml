@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules>
+    <rule type="folder">
+        <format color="#827B00" bold="" />
+        <regex><![CDATA[[ .](annotation|end|method|sparse\-switch|packed\-switch)\b]]></regex>
+    </rule>
+    <rule type="hex">
+        <format color="#0044FF" />
+        <regex><![CDATA[\b0[xX][0-9a-fA-F]+\b]]></regex>
+    </rule>
+    <rule type="integer">
+        <format color="#0044FF" />
+        <regex><![CDATA[[-+]?\b\d+\b]]></regex>
+    </rule>
+    <rule type="keyword">
+        <format color="#0054A6" bold="" />
+        <regex><![CDATA[[.](array\-data|catch|catchall|class|local|enum|epilogue|field|implements|line|local|locals|param|parameter|prologue|registers|restart|restart\\|local|source|subannotation|super)\b]]></regex>
+    </rule>
+    <rule type="modifier">
+        <format color="#0054A6" />
+        <regex><![CDATA[\b(abstract|bridge|constructor|declared\-synchronized|enum|final|interface|native|private|protected|public|static|strictfp|synchronized|synthetic|system|transient|varargs|volatile)\b]]></regex>
+    </rule>
+    <rule type="numeric">
+        <format color="#57A500" />
+        <regex><![CDATA[\b(cond_|goto_)(?:[0-9]{1,2}|100)\b]]></regex>
+    </rule>
+    <rule type="parameter">
+        <format bold="" color="#00AEEF" />
+        <regex><![CDATA[\bp(?:[0-9]{1,2}|100)\b]]></regex>
+    </rule>
+    <rule type="qualifier">
+        <format color="#FF2740" />
+       <regex><![CDATA[\b(add\-float|add\-double|add\-int|add\-long|aget\-boolean|aget\-byte|aget\-char|aget\-object|aget\-short|aget\-wide|aget|and\-int|and\-long|aput\-boolean|aput\-byte|aput\-char|aput\-object|aput\-short|aput\-wide|aput|array\-length|check\-cast|cmp\-long|cmpg\-double|cmpg\-float|cmpl\-double|cmpl\-float|const\-class|const\-string\-jumbo|const\-string|const\-wide|const|div\-double|div\-float|div\-int|div\-long|double\-to\-float|double\-to\-int|double\-to\-long|execute\-inline|fill\-array\-data|filled\-new\-array|float\-to\-double|float\-to\-int|float\-to\-long|goto|if\-eq|if\-eqz|if\-ge|if\-gez|if\-gt|if\-gtz|if\-le|if\-lez|if\-lt|if\-ltz|if\-ne|if\-nez|iget\-boolean|iget\-byte|iget\-char|iget\-object\-quick|iget\-object|iget\-quick|iget\-short|iget\-wide\-quick|iget\-wide|iget|instance\-of|int\-to\-byte|int\-to\-char|int\-to\-double|int\-to\-float|int\-to\-long|int\-to\-short|invoke\-direct\-empty|invoke\-direct|invoke\-interface|invoke\-static|invoke\-super\-quick|invoke\-super|invoke\-virtual\-quick|invoke\-virtual|iput\-boolean|iput\-byte|iput\-char|iput\-object\-quick|iput\-object|iput\-quick|iput\-short|iput\-wide\-quick|iput\-wide|iput|long\-to\-double|long\-to\-float|long\-to\-int|monitor\-enter|monitor\-exit|move\-exception|move\-object|move\-result\-object|move\-result|move\-result\-wide|move\-wide|move|mul\-double|mul\-float|mul\-int|mul\-long|neg\-double|neg\-float|neg\-int|neg\-long|new\-array|new\-instance|nop|not\-int|not\-long|or\-int|or\-long|rem\-double|rem\-float|rem\-int|rem\-long|return\-object|return\-void|return\-wide|return|rsub\-int|sget\-boolean|sget\-byte|sget\-char|sget\-object|sget\-short|sget\-wide|sget|shl\-int|shl\-long|shr\-int|shr\-long|sparse\-switch|sput\-boolean|sput\-byte|sput\-char|sput\-object|sput\-short|sput\-wide|sput|sub\-double|sub\-float|sub\-int|sub\-long|throw\-verification\-error|throw|ushr\-int|ushr\-long|xor\-int|xor\-long)\b]]></regex>
+    </rule>
+    <rule type="register">
+        <format color="#00AEEF" />
+        <regex><![CDATA[\bv(?:[0-9]{1,2}|100)\b]]></regex>
+    </rule>
+    <rule type="string">
+        <format color="#92278F" />
+        <regex><![CDATA[\"(?:[^\\"]|\.)*\"]]></regex>
+    </rule>
+    <rule type="comment">
+        <format color="#197B30" />
+        <regex><![CDATA[#[^\n]*]]></regex>
+    </rule>
+</rules>

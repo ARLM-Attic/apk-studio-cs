@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <completion type="modifier" label="add-double vx,vy,vz">
+        <![CDATA[Adds vy to vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="add-float vx,vy,vz">
+        <![CDATA[Adds vy to vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="add-int vx,vy,vz">
+        <![CDATA[Calculates vy+vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="add-int/2addr vx,vy">
+        <![CDATA[Adds vy to vx.]]>
+    </completion>
+    <completion type="modifier" label="add-long vx, vy, vz">
+        <![CDATA[Adds vy to vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="add-long/2addr vx,vy">
+        <![CDATA[Adds vy to vx.]]>
+    </completion>
+    <completion type="modifier" label="add-double/2addr vx, vy">
+        <![CDATA[Adds vy to vx.]]>
+    </completion>
+    <completion type="modifier" label="add-float/2addr vx,vy">
+        <![CDATA[Adds vy to vx.]]>
+    </completion>
+    <completion type="modifier" label="aget vx,vy,vz">
+        <![CDATA[Gets an integer value of an object reference array into vx. The array is referenced by vy and is indexed by vz.]]>
+    </completion>
+    <completion type="modifier" label="aget-boolean vx,vy,vz">
+        <![CDATA[Gets a boolean value of a boolean array into vx. The array is referenced by vy and is indexed by vz.]]>
+    </completion>
+    <completion type="modifier" label="aget-byte vx,vy,vz">
+        <![CDATA[Gets a byte value of a byte array into vx. The array is referenced by vy and is indexed by vz.]]>
+    </completion>
+    <completion type="modifier" label="aget-char vx, vy,vz">
+        <![CDATA[Gets a char value of a character array into vx. The element is indexed by vz, the array object is referenced by vy]]>
+    </completion>
+    <completion type="modifier" label="aget-object vx,vy,vz">
+        <![CDATA[Gets an object reference value of an object reference array into vx. The array is referenced by vy and is indexed by vz.]]>
+    </completion>
+    <completion type="modifier" label="aget-short vx,vy,vz">
+        <![CDATA[Gets a short value of a short array into vx. The element is indexed by vz, the array object is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="aget-wide vx,vy,vz">
+        <![CDATA[Gets a long/double value of long/double array into vx,vx+1. The array is referenced by vy and is indexed by vz.]]>
+    </completion>
+    <completion type="modifier" label="and-int vx, vy, vz">
+        <![CDATA[Calculates vy AND vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="and-int/2addr vx, vy">
+        <![CDATA[Calculates vx AND vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="add-int/lit16 vx,vy,lit16">
+        <![CDATA[Adds vy to lit16 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="and-int/lit8 vx,vy,lit8">
+        <![CDATA[Calculates vy AND lit8 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="and-int/lit16 vx,vy,lit16">
+        <![CDATA[Calculates vy AND lit16 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="and-long vx, vy, vz">
+        <![CDATA[Calculates the vy AND vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="and-long/2addr vx, vy">
+        <![CDATA[Calculates vx AND vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="aput vx,vy,vz">
+        <![CDATA[Puts the integer value in vx into an element of an integer array. The element is indexed by vz, the array object is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="aput-boolean vx,vy,vz">
+        <![CDATA[Puts the boolean value in vx into an element of a boolean array. The element is indexed by vz, the array object is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="aput-byte vx,vy,vz">
+        <![CDATA[Puts the byte value in vx into an element of a byte array. The element is indexed by vz, the array object is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="aput-char vx,vy,vz">
+        <![CDATA[Puts the char value in vx into an element of a character array. The element is indexed by vz, the array object is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="aput-object vx,vy,vz">
+        <![CDATA[Puts the object reference value in vx into an element of an object reference array. The element is indexed by vz, the array object is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="aput-short vx,vy,vz">
+        <![CDATA[Puts the short value in vx into an element of a short array. The element is indexed by vz, the array object is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="aput-wide vx,vy,vz">
+        <![CDATA[Puts the double/long value in vx,vx+1 into a double/long array. The array is referenced by vy, the element is indexed by vz.]]>
+    </completion>
+    <completion type="modifier" label="array-length vx,vy">
+        <![CDATA[Calculates the number of elements of the array referenced by vy and puts the length value into vx.]]>
+    </completion>
+    <completion type="modifier" label="check-cast vx, type_id">
+        <![CDATA[Checks whether the object reference in vx can be cast to an instance of a class referenced by type_id. Throws ClassCastException if the cast is not possible, continues execution ]otherwise.]]>
+    </completion>
+    <completion type="modifier" label="cmp-long vx, vy, vz">
+        <![CDATA[Compares the long values in vy and vz and sets the integer value in vx accordingly.]]>
+    </completion>
+    <completion type="modifier" label="cmpg-double vx, vy, vz">
+        <![CDATA[Compares the double values in vy and vzand sets the integer value in vx accordingly.]]>
+    </completion>
+    <completion type="modifier" label="cmpg-float vx, vy, vz">
+        <![CDATA[Compares the float values in vy and vz and sets the integer value in vx accordingly.]]>
+    </completion>
+    <completion type="modifier" label="cmpl-double vx,vy,vz">
+        <![CDATA[Compares the double values in vy and vzand sets the integer value in vx accordingly.]]>
+    </completion>
+    <completion type="modifier" label="cmpl-float">
+        <![CDATA[Compares the float values in vy and vz and sets the integer value in vx accordingly]]>
+    </completion>
+    <completion type="modifier" label="const vx, lit32">
+        <![CDATA[Puts the integer constant into vx]]>
+    </completion>
+    <completion type="modifier" label="const/4 vx,lit4">
+        <![CDATA[Puts the 4 bit constant into vx]]>
+    </completion>
+    <completion type="modifier" label="const/16 vx,lit16">
+        <![CDATA[Puts the 16 bit constant into vx]]>
+    </completion>
+    <completion type="modifier" label="const-class vx,type_id">
+        <![CDATA[Moves the class object of a class identified by type_id (e.g. Object.class) into vx.]]>
+    </completion>
+    <completion type="modifier" label="const/high16 v0, lit16">
+        <![CDATA[Puts the 16 bit constant into the topmost bits of the register. Used to initialize float values.]]>
+    </completion>
+    <completion type="modifier" label="const-string vx,string_id">
+        <![CDATA[Puts reference to a string constant identified by string_id into vx.]]>
+    </completion>
+    <completion type="modifier" label="const-string-jumbo"></completion>
+    <completion type="modifier" label="const-wide vx, lit64">
+        <![CDATA[Puts the 64 bit constant into vx and vx+1 registers.]]>
+    </completion>
+    <completion type="modifier" label="const-wide/16 vx, lit16">
+        <![CDATA[Puts the integer constant into vx and vx+1 registers, expanding the integer constant into a long constant..]]>
+    </completion>
+    <completion type="modifier" label="const-wide/32 vx, lit32">
+        <![CDATA[Puts the 32 bit constant into vx and vx+1 registers, expanding the integer constant into a long constant.]]>
+    </completion>
+    <completion type="modifier" label="const-wide/high16 vx,lit16">
+        <![CDATA[Puts the 16 bit constant into the highest 16 bit of vx and vx+1 registers. Used to initialize double values.]]>
+    </completion>
+    <completion type="modifier" label="div-double vx, vy, vz">
+        <![CDATA[Calculates vy/vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-double/2addr vx, vy">
+        <![CDATA[Calculates vx/vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-float vx, vy, vz">
+        <![CDATA[Calculates vy/vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-float/2addr vx, vy">
+        <![CDATA[Calculates vx/vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-int vx,vy,vz">
+        <![CDATA[Divides vy with vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-int/2addr vx,vy">
+        <![CDATA[Divides vx with vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-int/lit8 vx,vy,lit8">
+        <![CDATA[Calculates vy/lit8 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-int/lit16 vx,vy,lit16">
+        <![CDATA[Calculates vy / lit16 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-long vx, vy, vz">
+        <![CDATA[Calculates vy/vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="div-long/2addr vx, vy">
+        <![CDATA[Calculates vx/vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="double-to-float vx, vy">
+        <![CDATA[Converts the double value in vy,vy+1 into a float value in vx.]]>
+    </completion>
+    <completion type="modifier" label="double-to-int vx, vy">
+        <![CDATA[Converts the double value in vy,vy+1 into an integer value in vx.]]>
+    </completion>
+    <completion type="modifier" label="double-to-long vx, vy">
+        <![CDATA[Converts the double value in vy,vy+1 into a long value in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="execute-inline {parameters},inline ID">
+        <![CDATA[Executes the inline method identified by inline ID.]]>
+    </completion>
+    <completion type="modifier" label="fill-array-data vx,array_data_offset">
+        <![CDATA[Fills the array referenced by vx with the static data. The location of the static data is the sum of the position of the current instruction and the offset]]>
+    </completion>
+    <completion type="modifier" label="filled-new-array {parameters},type_id">
+        <![CDATA[Generates a new array of type_id and fills it with the parameters. Reference to the newly generated array can be obtained by a move-result-object instruction, immediately following the filled-new-array instruction.]]>
+    </completion>
+    <completion type="modifier" label="filled-new-array-range {vx..vy},type_id">
+        <![CDATA[Generates a new array of type_id and fills it with a range of parameters. Reference to the newly generated array can be obtained by a move-result-object instruction, immediately following the filled-new-array instruction.]]>
+    </completion>
+    <completion type="modifier" label="float-to-double vx, vy">
+        <![CDATA[Converts the float value in vy into a double value in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="float-to-long vx,vy">
+        <![CDATA[Converts the float value in vy into a long value in vx.]]>
+    </completion>
+    <completion type="modifier" label="float-to-int vx, vy">
+        <![CDATA[Converts the float value in vy into an integer value in vx.]]>
+    </completion>
+    <completion type="modifier" label="goto target">
+        <![CDATA[Unconditional jump by short offset]]>
+    </completion>
+    <completion type="modifier" label="goto/16 target">
+        <![CDATA[Unconditional jump by 16 bit offset.]]>
+    </completion>
+    <completion type="modifier" label="goto/32 target"></completion>
+    <completion type="modifier" label="if-eq vx,vy,target">
+        <![CDATA[Jumps to target if vx==vy. vx and vy are integer values.]]>
+    </completion>
+    <completion type="modifier" label="if-eqz vx,target">
+        <![CDATA[Jumps to target if vx==0. vx is an integer value.]]>
+    </completion>
+    <completion type="modifier" label="if-ge vx, vy,target">
+        <![CDATA[Jumps to target if vx&gt;=vy. vx and vy are integer values.]]>
+    </completion>
+    <completion type="modifier" label="if-gez vx,target">
+        <![CDATA[Checks vx and jumps if vx&gt;=0.]]>
+    </completion>
+    <completion type="modifier" label="if-gt vx,vy,target">
+        <![CDATA[Jumps to target if vx&gt;vy. vx and vy are integer values.]]>
+    </completion>
+    <completion type="modifier" label="if-gtz vx,target">
+        <![CDATA[Checks vx and jumps if vx&gt;0.]]>
+    </completion>
+    <completion type="modifier" label="if-le vx,vy,target">
+        <![CDATA[Jumps to target if vx&lt;=vy. vx and vy are integer values.]]>
+    </completion>
+    <completion type="modifier" label="if-lez vx,target">
+        <![CDATA[Checks vx and jumps if vx&lt;=0.]]>
+    </completion>
+    <completion type="modifier" label="if-lt vx,vy,target">
+        <![CDATA[Jumps to target is vx&lt;vy. vx and vy are integer values.]]>
+    </completion>
+    <completion type="modifier" label="if-ltz vx,target">
+        <![CDATA[Checks vx and jumps if vx&lt;0.]]>
+    </completion>
+    <completion type="modifier" label="if-ne vx,vy,target">
+        <![CDATA[Jumps to target if vx!=vy. vx and vy are integer values.]]>
+    </completion>
+    <completion type="modifier" label="if-nez vx,target">
+        <![CDATA[Checks vx and jumps if vx is nonzero.]]>
+    </completion>
+    <completion type="modifier" label="iget vx, vy, field_id">
+        <![CDATA[Reads an instance field into vx. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iget-boolean vx,vy,field_id">
+        <![CDATA[Reads a boolean instance field into vx. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iget-byte vx,vy,field_id">
+        <![CDATA[Reads a byte instance field into vx. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iget-char vx,vy,field_id">
+        <![CDATA[Reads a char instance field into vx. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iget-object vx,vy,field_id">
+        <![CDATA[Reads an object reference instance field into vx. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iget-object-quick vx,vy,offset">
+        <![CDATA[Gets the object reference value stored at offset in vy instance's data area to vx.]]>
+    </completion>
+    <completion type="modifier" label="iget-quick vx,vy,offset">
+        <![CDATA[Gets the value stored at offset in vy instance's data area to vx.]]>
+    </completion>
+    <completion type="modifier" label="iget-short vx,vy,field_id">
+        <![CDATA[Reads a short instance field into vx. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iget-wide vx,vy,field_id">
+        <![CDATA[Reads an instance field into vx. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iget-wide-quick vx,vy,offset">
+        <![CDATA[Gets the object reference value stored at offset in vy instance's data area to vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="instance-of vx,vy,type_id">
+        <![CDATA[Checks whether vy is instance of a class identified by type_id. Sets vx non-zero if it is, 0 otherwise.]]>
+    </completion>
+    <completion type="modifier" label="int-to-byte vx,vy">
+        <![CDATA[Converts the int value in vy to a byte value and stores it in vx.]]>
+    </completion>
+    <completion type="modifier" label="int-to-char vx,vy">
+        <![CDATA[Converts the int value in vy to a char value and stores it in vx.]]>
+    </completion>
+    <completion type="modifier" label="int-to-double vx, vy">
+        <![CDATA[Converts the integer in vy into the double in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="int-to-float vx, vy">
+        <![CDATA[Converts the integer in vx into a float in vx.]]>
+    </completion>
+    <completion type="modifier" label="int-to-long vx, vy">
+        <![CDATA[Converts the integer in vy into a long in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="int-to-short vx,vy">
+        <![CDATA[Converts the int value in vy to a short value and stores it in vx.]]>
+    </completion>
+    <completion type="modifier" label="inv {parameter},methodtocall">
+        <![CDATA[Invokes the virtual method of the immediate parent class.]]>
+    </completion>
+    <completion type="modifier" label="inv/range">
+        <![CDATA[Invokes the virtual method of the immediate parent class. The instruction specifies the first register and the number of registers to be passed to the method.]]>
+    </completion>
+    <completion type="modifier" label="inv-quick {parameters},vtable offset">
+        <![CDATA[Invokes a virtual method in the target object's immediate parent class using the vtable of that parent class.]]>
+    </completion>
+    <completion type="modifier" label="inv-quick/range {register range},vtable offset">
+        <![CDATA[Invokes a virtual method in the target object's immediate parent class using the vtable of that parent class.]]>
+    </completion>
+    <completion type="modifier" label="invoke-direct { parameters }, methodtocall">
+        <![CDATA[Invokes a method with parameters without the virtual method resolution.]]>
+    </completion>
+    <completion type="modifier" label="invoke-direct-empty">
+        <![CDATA[Stands as a placeholder for pruned empty methods like Object.&lt;init&gt;. This acts as nop during normal execution.]]>
+    </completion>
+    <completion type="modifier" label="invoke-direct/range {vx..vy},methodtocall">
+        <![CDATA[Invokes direct method with a range of registers. The instruction specifies the first register and the number of registers to be passed to the method.]]>
+    </completion>
+    <completion type="modifier" label="invoke-interface {parameters},methodtocall">
+        <![CDATA[Invokes an interface method.]]>
+    </completion>
+    <completion type="modifier" label="invoke-interface-range">
+        <![CDATA[Invokes an interface method with a range of registers. The instruction specifies the first register and the number of registers to be passed to the method.]]>
+    </completion>
+    <completion type="modifier" label="invoke-static {parameters}, methodtocall">
+        <![CDATA[Invokes a static method with parameters.]]>
+    </completion>
+    <completion type="modifier" label="invoke-static/range {vx..vy},methodtocall">
+        <![CDATA[Invokes static method with a range of registers. The instruction specifies the first register and the number of registers to be passed to the method.]]>
+    </completion>
+    <completion type="modifier" label="invoke-virtual { parameters }, methodtocall">
+        <![CDATA[Invokes a virtual method with parameters.]]>
+    </completion>
+    <completion type="modifier" label="invoke-virtual-quick {parameters},vtable offset">
+        <![CDATA[Invokes a virtual method using the vtable of the target object.]]>
+    </completion>
+    <completion type="modifier" label="invoke-virtual-quick/range {parameter range},vtable offset">
+        <![CDATA[Invokes a virtual method using the vtable of the target object]]>
+    </completion>
+    <completion type="modifier" label="invoke-virtual/range {vx..vy},methodtocall">
+        <![CDATA[Invokes virtual method with a range of registers. The instruction specifies the first register and the number of registers to be passed to the method.]]>
+    </completion>
+    <completion type="modifier" label="iput vx,vy, field_id">
+        <![CDATA[Puts vx into an instance field. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iput-boolean vx,vy, field_id">
+        <![CDATA[Puts the boolean value located in vx into an instance field. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iput-byte vx,vy,field_id">
+        <![CDATA[Puts the byte value located in vx into an instance field. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iput-char vx,vy,field_id">
+        <![CDATA[Puts the char value located in vx into an instance field. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iput-object vx,vy,field_id">
+        <![CDATA[Puts the object reference in vx into an instance field. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iput-object-quick vx,vy,offset">
+        <![CDATA[Puts the object reference value stored in vx to offset in vy instance's data area to vx.]]>
+    </completion>
+    <completion type="modifier" label="iput-quick vx,vy,offset">
+        <![CDATA[Puts the value stored in vx to offset in vy instance's data area.]]>
+    </completion>
+    <completion type="modifier" label="iput-short vx,vy,field_id">
+        <![CDATA[Puts the short value located in vx into an instance field. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iput-wide vx,vy, field_id">
+        <![CDATA[Puts the wide value located in vx and vx+1 registers into an instance field. The instance is referenced by vy.]]>
+    </completion>
+    <completion type="modifier" label="iput-wide-quick vx,vy,offset">
+        <![CDATA[Puts the value stored in vx,vx+1 to offset in vy instance's data area.]]>
+    </completion>
+    <completion type="modifier" label="long-to-double vx, vy">
+        <![CDATA[Converts the long value in vy,vy+1 into a double value in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="long-to-float vx, vy">
+        <![CDATA[Converts the long value in vy,vy+1 into a float in vx.]]>
+    </completion>
+    <completion type="modifier" label="long-to-int vx,vy">
+        <![CDATA[Converts the long value in vy,vy+1 into an integer in vx.]]>
+    </completion>
+    <completion type="modifier" label="monitor-enter vx">
+        <![CDATA[Obtains the monitor of the object referenced by vx.]]>
+    </completion>
+    <completion type="modifier" label="monitor-exit">
+        <![CDATA[Releases the monitor of the object referenced by vx.]]>
+    </completion>
+    <completion type="modifier" label="move vx,vy">
+        <![CDATA[Moves the content of vy into vx. Both registers must be in the first 256 register range.]]>
+    </completion>
+    <completion type="modifier" label="move/from1 vx,vy">
+        <![CDATA[Moves the content of vy into vx. vy may be in the 64k register range while vx is one of the first 256 registers.]]>
+    </completion>
+    <completion type="modifier" label="move-exception vx">
+        <![CDATA[Move the exception object reference thrown during a method invocation into vx.]]>
+    </completion>
+    <completion type="modifier" label="move-object vx,vy">
+        <![CDATA[Moves the object reference from vy to vx.]]>
+    </completion>
+    <completion type="modifier" label="move-object/from16 vx,vy">
+        <![CDATA[Moves the object reference from vy to vx, vy can address 64k registers and vx can address 256 registers.]]>
+    </completion>
+    <completion type="modifier" label="move-result vx">
+        <![CDATA[Move the result value of the previous method invocation into vx.]]>
+    </completion>
+    <completion type="modifier" label="move-result-object vx">
+        <![CDATA[Move the result object reference of the previous method invocation into vx.]]>
+    </completion>
+    <completion type="modifier" label="move-result-wide vx">
+        <![CDATA[Move the long/double result value of the previous method invocation into vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="move-wide/from16 vx,vy">
+        <![CDATA[Moves a long/double value from vy to vx. vy may be in the 64k register range while wx is one of the first 256 registers.]]>
+    </completion>
+    <completion type="modifier" label="mul-double vx, vy, vz">
+        <![CDATA[Multiplies vy with vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="mul-double/2addr vx, vy">
+        <![CDATA[Multiplies vx with vy.]]>
+    </completion>
+    <completion type="modifier" label="mul-float vx, vy, vz">
+        <![CDATA[Multiplies vy with vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="mul-float/2addr vx, vy">
+        <![CDATA[Multiplies vx with vy.]]>
+    </completion>
+    <completion type="modifier" label="mul-int vx, vy, vz">
+        <![CDATA[Multiplies vz with wy and puts the result int vx.]]>
+    </completion>
+    <completion type="modifier" label="mul-int/2addr vx,vy">
+        <![CDATA[Multiplies vx with vy.]]>
+    </completion>
+    <completion type="modifier" label="mul-int/lit8 vx,vy,lit8">
+        <![CDATA[Multiplies vy with lit8 8-bit literal constant and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="mul-int/lit16 vx,vy,lit16">
+        <![CDATA[Calculates vy * lit16 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="mul-long vx,vy,vz">
+        <![CDATA[Calculates vy*vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="mul-long/2addr vx,vy">
+        <![CDATA[Calculates vx*vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="neg-double vx,vy">
+        <![CDATA[Calculates vx,vx+1=-(vy,vy+1)]]>
+    </completion>
+    <completion type="modifier" label="neg-float vx,vy">
+        <![CDATA[Calculates vx=-vy]]>
+    </completion>
+    <completion type="modifier" label="neg-int vx,vy">
+        <![CDATA[Calculates vx=-vy.]]>
+    </completion>
+    <completion type="modifier" label="neg-long vx,vy">
+        <![CDATA[Calculates vx,vx+1=-(vy,vy+1)]]>
+    </completion>
+    <completion type="modifier" label="new-array vx,vy,type_id">
+        <![CDATA[Generates a new array of type_id type and vy element size and puts the reference to the array into vx.]]>
+    </completion>
+    <completion type="modifier" label="new-instance vx,type">
+        <![CDATA[Instantiates an object type and puts the reference of the newly created instance into vx.]]>
+    </completion>
+    <completion type="modifier" label="nop">
+        <![CDATA[No operation]]>
+    </completion>
+    <completion type="modifier" label="or-int vx, vy, vz">
+        <![CDATA[Calculates vy OR vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="or-int/2addr vx, vy">
+        <![CDATA[Calculates vx OR vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="or-int/lit8 vx, vy, lit8">
+        <![CDATA[Calculates vy OR lit8 and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="or-long vx, vy, vz">
+        <![CDATA[Calculates the vy OR vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="or-long/2addr vx, vy">
+        <![CDATA[Calculates vx OR vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="or-int/lit16 vx,vy,lit16">
+        <![CDATA[Calculates vy OR lit16 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="packed-switch vx,table">
+        <![CDATA[Implements a switch statement where the case constants are close to each other. The instruction uses an index table. vx indexes into this table to find the offset of the instruction for a particular case. If vx falls out of the index table, the execution continues on the next instruction (default case). ]]>
+    </completion>
+    <completion type="modifier" label="rem-double vx,vy,vz">
+        <![CDATA[Calculates vy % vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="rem-double/2addr vx,vy">
+        <![CDATA[Calculates vx % vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="rem-float vx,vy,vz">
+        <![CDATA[Calculates vy % vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="rem-float/2addr vx,vy">
+        <![CDATA[Calculates vx/vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="rem-int vx,vy,vz">
+        <![CDATA[Calculates vy % vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="rem-int/2addr vx,vy">
+        <![CDATA[Calculates vx % vy and puts the result into vx]]>
+    </completion>
+    <completion type="modifier" label="rem-int/lit8 vx,vy,lit8">
+        <![CDATA[Calculates vy % lit8 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="rem-int/lit16 vx,vy,lit16">
+        <![CDATA[Calculates vy % lit16 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="rem-long vx,vy,vz">
+        <![CDATA[Calculates vy % vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="rem-long/2addr vx,vy">
+        <![CDATA[Calculates vx % vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="return vx">
+        <![CDATA[Return with vx return value]]>
+    </completion>
+    <completion type="modifier" label="return-object vx">
+        <![CDATA[Return with vx object reference value.]]>
+    </completion>
+    <completion type="modifier" label="return-void">
+        <![CDATA[Return without a return value]]>
+    </completion>
+    <completion type="modifier" label="return-wide vx">
+        <![CDATA[Return with double/long result in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="sget vx,field_id">
+        <![CDATA[Reads the integer field identified by the field_id into vx.]]>
+    </completion>
+    <completion type="modifier" label="sget-boolean vx,field_id">
+        <![CDATA[Reads the boolean static field identified by the field_id into vx.]]>
+    </completion>
+    <completion type="modifier" label="sget-byte vx,field_id">
+        <![CDATA[Reads the byte static field identified by the field_id into vx.]]>
+    </completion>
+    <completion type="modifier" label="sget-char vx,field_id">
+        <![CDATA[Reads the char static field identified by the field_id into vx.]]>
+    </completion>
+    <completion type="modifier" label="sget-object vx,field_id">
+        <![CDATA[Reads the object reference field identified by the field_id into vx.]]>
+    </completion>
+    <completion type="modifier" label="sget-short vx,field_id">
+        <![CDATA[Reads the short static field identified by the field_id into vx.]]>
+    </completion>
+    <completion type="modifier" label="sget-wide vx, field_id">
+        <![CDATA[Reads the static field identified by the field_id into vx and vx+1 registers.]]>
+    </completion>
+    <completion type="modifier" label="shl-int vx, vy, vz">
+        <![CDATA[Shift vy left by the positions specified by vz and store the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="shl-int/2addr vx, vy">
+        <![CDATA[Shifts vx left by vy positions.]]>
+    </completion>
+    <completion type="modifier" label="shl-int/lit8 vx, vy, lit8">
+        <![CDATA[Shift v0 left by the bit positions specified by the literal constant and put the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="shl-long vx, vy, vz">
+        <![CDATA[Shifts left vy by vz positions and stores the result in vx.]]>
+    </completion>
+    <completion type="modifier" label="shl-long/2addr vx, vy">
+        <![CDATA[Shifts left the value in vx,vx+1 by the positions specified by vy and stores the result in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="shr-int vx, vy, vz">
+        <![CDATA[Shift vy right by the positions specified by vz and store the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="shr-int/2addr vx, vy">
+        <![CDATA[Shifts vx right by vy positions.]]>
+    </completion>
+    <completion type="modifier" label="shr-int/lit8 vx, vy, lit8">
+        <![CDATA[Shift v0 right by the bit positions specified by the literal constant and put the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="shr-long vx,vy,vz">
+        <![CDATA[Shifts right vy by vz positions and stores the result in vx.]]>
+    </completion>
+    <completion type="modifier" label="shr-long/2addr vx, vy">
+        <![CDATA[Shifts right the value in vx,vx+1 by the positions specified by vy and stores the result in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="sparse-switch vx,table">
+        <![CDATA[Implements a switch statement with sparse case table. The instruction uses a lookup table with case constants and offsets for each case constant. If there is no match in the table, execution continues on the next instruction (default case). ]]>
+    </completion>
+    <completion type="modifier" label="sput vx, field_id">
+        <![CDATA[Puts vx into a static field.]]>
+    </completion>
+    <completion type="modifier" label="sput-boolean vx,field_id">
+        <![CDATA[Puts boolean value in vx into a static field.]]>
+    </completion>
+    <completion type="modifier" label="sput-byte vx,field_id">
+        <![CDATA[Puts byte value in vx into a static field.]]>
+    </completion>
+    <completion type="modifier" label="sput-char vx,field_id">
+        <![CDATA[Puts char value in vx into a static field.]]>
+    </completion>
+    <completion type="modifier" label="sput-object vx,field_id">
+        <![CDATA[Puts object reference in vx into a static field.]]>
+    </completion>
+    <completion type="modifier" label="sput-short vx,field_id">
+        <![CDATA[Puts short value in vx into a static field.]]>
+    </completion>
+    <completion type="modifier" label="sput-wide vx, field_id">
+        <![CDATA[Puts vx and vx+1 into a static field.]]>
+    </completion>
+    <completion type="modifier" label="sub-double vx,vy,vz">
+        <![CDATA[Calculates vy-vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-double/2addr vx, vy">
+        <![CDATA[Calculates vx-vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-float vx,vy,vz">
+        <![CDATA[Calculates vy-vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-float/2addr vx,vy">
+        <![CDATA[Calculates vx-vy and stores the result in vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-int vx,vy,vz">
+        <![CDATA[Calculates vy-vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-int/2addr vx,vy">
+        <![CDATA[Calculates vx-vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-int/lit8 vx,vy,lit8">
+        <![CDATA[Calculates vy-lit8 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-int/lit16 vx,vy,lit16">
+        <![CDATA[Calculates vy - lit16 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-long vx,vy,vz">
+        <![CDATA[Calculates vy-vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="sub-long/2addr vx,vy">
+        <![CDATA[Calculates vx-vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="throw vx">
+        <![CDATA[Throws an exception object. The reference of the exception object is in vx.]]>
+    </completion>
+    <completion type="modifier" label="ushr-int vx, vy, vz">
+        <![CDATA[Unsigned shift right (&gt;&gt;&gt;) vy by the positions specified by vz and store the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="ushr-int/2addr vx, vy">
+        <![CDATA[Unsigned shift right (&gt;&gt;&gt;) vx by the positions specified by vy.]]>
+    </completion>
+    <completion type="modifier" label="ushr-int/lit8 vx, vy, lit8">
+        <![CDATA[Unsigned right shift of v0 (&gt;&gt;&gt;) by the bit positions specified by the literal constant and put the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="ushr-long vx, vy, vz">
+        <![CDATA[Unsigned shifts right vy by vz positions and stores the result in vx.]]>
+    </completion>
+    <completion type="modifier" label="ushr-long/2addr vx, vy">
+        <![CDATA[Unsigned shifts right the value in vx,vx+1 by the positions specified by vy and stores the result in vx,vx+1.]]>
+    </completion>
+    <completion type="modifier" label="xor-int vx, vy, vz">
+        <![CDATA[Calculates vy XOR vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="xor-int/2addr vx, vy">
+        <![CDATA[Calculates vx XOR vy and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="xor-int/lit8 vx, vy, lit8">
+        <![CDATA[Calculates vy XOR lit8 and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="xor-int/lit16 vx,vy,lit16">
+        <![CDATA[Calculates vy XOR lit16 and stores the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="xor-long vx, vy, vz">
+        <![CDATA[Calculates the vy XOR vz and puts the result into vx.]]>
+    </completion>
+    <completion type="modifier" label="xor-long/2addr vx, vy">
+        <![CDATA[Calculates vx XOR vy and puts the result into vx.]]>
+    </completion>
+</completions>

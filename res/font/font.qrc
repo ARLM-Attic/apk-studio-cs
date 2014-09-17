@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/res/font">
+        <file>sourcecodepro-regular.ttf</file>
+        <file>sourcecodepro-bold.ttf</file>
+    </qresource>
+</RCC>

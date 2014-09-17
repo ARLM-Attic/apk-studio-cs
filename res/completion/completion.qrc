@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/res/completion">
+        <file>smali.xml</file>
+        <file>xml.xml</file>
+    </qresource>
+</RCC>
