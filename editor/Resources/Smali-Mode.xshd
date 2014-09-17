@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<!-- syntaxdefinition for Dalvik byte code by Vaibhav Pandey -->
+
+<SyntaxDefinition name = "Smali" extensions = ".smali">
+	
+	<Properties>
+		<Property name="LineComment" value="#"/>
+	</Properties>
+	
+	<Digits name = "Digits" bold = "false" italic = "false" color = "DarkBlue"/>
+	
+	<RuleSets>
+		<RuleSet ignorecase = "false">
+			<Delimiters>(&quot;0)&quot;0</Delimiters>
+		
+			<Span name = "PreprocessorDirectives" bold="false" italic="false" color="Green" stopateol = "true">
+				<Begin>#</Begin>
+			</Span>
+			
+			<Span name = "String" bold = "false" italic = "false" color = "Magenta" stopateol = "true" escapecharacter="\">
+				<Begin>"</Begin>
+				<End>"</End>
+			</Span>
+			
+			<Span name = "Char" bold = "false" italic = "false" color = "Magenta" stopateol = "true" escapecharacter="\">
+				<Begin>&apos;</Begin>
+				<End>&apos;</End>
+			</Span>
+			
+			<MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious>
+			
+			<KeyWords name = "Punctuation" bold = "false" italic = "false" color = "DarkGreen">
+        <Key word = "&quot;" />
+        <Key word = "(" />
+
+        <Key word = ")" />
+        <Key word = "," />
+
+        <Key word = ";" />
+        <Key word = "{" />
+        <Key word = "}" />
+        <Key word = "&gt;" />
+			</KeyWords>
+			
+			<KeyWords name = "OperatorKeywords" bold="true" italic="false" color="DarkCyan">
+			</KeyWords>
+			
+			<KeyWords name = "AccessModifiers" bold="true" italic="false" color="Blue">
+        <Key word = "abstract" />
+        <Key word = "bridge" />
+        <Key word = "constructor" />
+        <Key word = "declared-synchronized" />
+        <Key word = "enum" />
+        <Key word = "final" />
+        <Key word = "interface" />
+        <Key word = "native" />
+        <Key word = "private" />
+        <Key word = "protected" />
+        <Key word = "public" />
+        <Key word = "static" />
+        <Key word = "strictfp" />
+        <Key word = "synchronized" />
+        <Key word = "synthetic" />
+        <Key word = "system" />
+        <Key word = "transient" />
+        <Key word = "transient" />
+        <Key word = "varargs" />
+        <Key word = "volatile" />
+			</KeyWords>
+
+      <KeyWords name = "ManagedKeyWords" bold="true" italic="false" color="Black">
+        <Key word = "v0" />
+        <Key word = "v1" />
+        <Key word = "v2" />
+        <Key word = "v3" />
+        <Key word = "v4" />
+        <Key word = "v5" />
+        <Key word = "v6" />
+        <Key word = "v7" />
+        <Key word = "v8" />
+        <Key word = "v9" />
+        <Key word = "v10" />
+        <Key word = "v11" />
+        <Key word = "v12" />
+        <Key word = "v13" />
+        <Key word = "v14" />
+        <Key word = "v15" />
+        <Key word = "v16" />
+        <Key word = "v17" />
+        <Key word = "v18" />
+        <Key word = "v19" />
+        <Key word = "v20" />
+        <Key word = "v21" />
+        <Key word = "v22" />
+        <Key word = "v23" />
+        <Key word = "v24" />
+        <Key word = "v25" />
+        <Key word = "v26" />
+        <Key word = "v27" />
+        <Key word = "v28" />
+        <Key word = "v29" />
+        <Key word = "v30" />
+        <Key word = "v31" />
+        <Key word = "v32" />
+        <Key word = "v33" />
+        <Key word = "v34" />
+        <Key word = "v35" />
+        <Key word = "v36" />
+        <Key word = "v37" />
+        <Key word = "v38" />
+        <Key word = "v39" />
+        <Key word = "v40" />
+        <Key word = "v41" />
+        <Key word = "v42" />
+        <Key word = "v43" />
+        <Key word = "v44" />
+        <Key word = "v45" />
+        <Key word = "v46" />
+        <Key word = "v47" />
+        <Key word = "v48" />
+        <Key word = "v49" />
+        <Key word = "v50" />
+        <Key word = "v0" />
+        <Key word = "p1" />
+        <Key word = "p2" />
+        <Key word = "p3" />
+        <Key word = "p4" />
+        <Key word = "p5" />
+        <Key word = "p6" />
+        <Key word = "p7" />
+        <Key word = "p8" />
+        <Key word = "p9" />
+        <Key word = "p10" />
+        <Key word = "p11" />
+        <Key word = "p12" />
+        <Key word = "p13" />
+        <Key word = "p14" />
+        <Key word = "p15" />
+        <Key word = "p16" />
+        <Key word = "p17" />
+        <Key word = "p18" />
+        <Key word = "p19" />
+        <Key word = "p20" />
+        <Key word = "p21" />
+        <Key word = "p22" />
+        <Key word = "p23" />
+        <Key word = "p24" />
+        <Key word = "p25" />
+        <Key word = "p26" />
+        <Key word = "p27" />
+        <Key word = "p28" />
+        <Key word = "p29" />
+        <Key word = "p30" />
+      </KeyWords>
+			
+			<KeyWords name = "Types" bold="false" italic="false" color="Red">
+				<Key word = ".annotation" />
+        <Key word = ".end\" />
+        <Key word = ".method" />
+        <Key word = ".packed-switch" />
+        <Key word = ".sparse-switch" />
+        <Key word = "annotation" />
+        <Key word = "method" />
+			</KeyWords>
+			
+			<KeyWords name = "JumpStatements" bold="false" italic="false" color="Navy">
+				<Key word = "goto" />
+				<Key word = "return" />
+			</KeyWords>
+			
+			<KeyWords name = "SelectionStatements" bold="true" italic="false" color="Blue">
+				<Key word = "case" />
+				<Key word = "else" />
+				<Key word = "if" />
+				<Key word = "switch" />
+				<Key word = "default" />
+			</KeyWords>
+			
+			<KeyWords name = "KEYWORD1" bold="true" italic="false" color="Blue">
+				<Key word = ".array-data" />
+				<Key word = ".catch" />
+				<Key word = ".catchall" />
+				<Key word = ".class" />
+				<Key word = ".end" />
+				<Key word = ".end\" />
+				<Key word = ".enum" />
+				<Key word = ".epilogue" />
+				<Key word = ".field" />
+				<Key word = ".implements" />
+				<Key word = ".line" />
+        <Key word = ".local" />
+        <Key word = ".locals" />
+        <Key word = ".parameter" />
+        <Key word = ".prologue" />
+        <Key word = ".registers" />
+        <Key word = ".restart" />
+        <Key word = ".restart\" />
+        <Key word = ".source" />
+        <Key word = ".subannotation" />
+        <Key word = ".super" />
+        <Key word = "local" />
+			</KeyWords>
+
+      <KeyWords name = "KEYWORD2" bold="false" italic="false" color="Blue">
+        <Key word = "add-double" />
+        <Key word = "add-double/2addr" />
+        <Key word = "add-float" />
+        <Key word = "add-float/2addr" />
+        <Key word = "add-int" />
+        <Key word = "add-int/2addr" />
+        <Key word = "add-int/lit16" />
+        <Key word = "add-int/lit8" />
+        <Key word = "add-long" />
+        <Key word = "add-long/2addr" />
+        <Key word = "aget" />
+        <Key word = "aget-boolean" />
+        <Key word = "aget-byte" />
+        <Key word = "aget-char" />
+        <Key word = "aget-object" />
+        <Key word = "aget-short" />
+        <Key word = "aget-wide" />
+        <Key word = "and-int" />
+        <Key word = "and-int/2addr" />
+        <Key word = "and-int/lit16" />
+        <Key word = "and-int/lit8" />
+        <Key word = "and-long" />
+        <Key word = "and-long/2addr" />
+        <Key word = "aput" />
+        <Key word = "aput-boolean" />
+        <Key word = "aput-byte" />
+        <Key word = "aput-char" />
+        <Key word = "aput-object" />
+        <Key word = "aput-short" />
+        <Key word = "aput-wide" />
+        <Key word = "array-length" />
+        <Key word = "check-cast" />
+        <Key word = "cmp-long" />
+        <Key word = "cmpg-double" />
+        <Key word = "cmpg-float" />
+        <Key word = "cmpl-double" />
+        <Key word = "cmpl-float" />
+        <Key word = "const" />
+        <Key word = "const-class" />
+        <Key word = "const-string" />
+        <Key word = "const-string-jumbo" />
+        <Key word = "const-wide" />
+        <Key word = "const-wide/16" />
+        <Key word = "const-wide/32" />
+        <Key word = "const-wide/high16" />
+        <Key word = "const/16" />
+        <Key word = "const/4" />
+        <Key word = "const/high16" />
+        <Key word = "div-double" />
+        <Key word = "div-double/2addr" />
+        <Key word = "div-float" />
+        <Key word = "div-float/2addr" />
+        <Key word = "div-int" />
+        <Key word = "div-int/2addr" />
+        <Key word = "div-int/lit16" />
+        <Key word = "div-int/lit8" />
+        <Key word = "div-long" />
+        <Key word = "div-long/2addr" />
+        <Key word = "double-to-float" />
+        <Key word = "double-to-int" />
+        <Key word = "double-to-long" />
+        <Key word = "execute-inline" />
+        <Key word = "fill-array-data" />
+        <Key word = "filled-new-array" />
+        <Key word = "filled-new-array/range" />
+        <Key word = "float-to-double" />
+        <Key word = "float-to-int" />
+        <Key word = "float-to-long" />
+        <Key word = "goto" />
+        <Key word = "goto/16" />
+        <Key word = "goto/32" />
+        <Key word = "if-eq" />
+        <Key word = "if-eqz" />
+        <Key word = "if-ge" />
+        <Key word = "if-gez" />
+        <Key word = "if-gt" />
+        <Key word = "if-gtz" />
+        <Key word = "if-le" />
+        <Key word = "if-lez" />
+        <Key word = "if-lt" />
+        <Key word = "if-ltz" />
+        <Key word = "if-ne" />
+        <Key word = "if-nez" />
+        <Key word = "iget" />
+        <Key word = "iget-boolean" />
+        <Key word = "iget-byte" />
+        <Key word = "iget-char" />
+        <Key word = "iget-object" />
+        <Key word = "iget-object-quick" />
+        <Key word = "iget-quick" />
+        <Key word = "iget-short" />
+        <Key word = "iget-wide" />
+        <Key word = "iget-wide-quick" />
+        <Key word = "instance-of" />
+        <Key word = "int-to-byte" />
+        <Key word = "int-to-char" />
+        <Key word = "int-to-double" />
+        <Key word = "int-to-float" />
+        <Key word = "int-to-long" />
+        <Key word = "int-to-short" />
+        <Key word = "invoke-direct" />
+        <Key word = "invoke-direct-empty" />
+        <Key word = "invoke-direct/range" />
+        <Key word = "invoke-interface" />
+        <Key word = "invoke-interface/range" />
+        <Key word = "invoke-static" />
+        <Key word = "invoke-static/range" />
+        <Key word = "invoke-super" />
+        <Key word = "invoke-super-quick" />
+        <Key word = "invoke-super-quick/range" />
+        <Key word = "invoke-super/range" />
+        <Key word = "invoke-virtual" />
+        <Key word = "invoke-virtual-quick" />
+        <Key word = "invoke-virtual-quick/range" />
+        <Key word = "invoke-virtual/range" />
+        <Key word = "iput" />
+        <Key word = "iput-boolean" />
+        <Key word = "iput-byte" />
+        <Key word = "iput-char" />
+        <Key word = "iput-object" />
+        <Key word = "iput-object-quick" />
+        <Key word = "iput-quick" />
+        <Key word = "iput-short" />
+        <Key word = "iput-wide" />
+        <Key word = "iput-wide-quick" />
+        <Key word = "long-to-double" />
+        <Key word = "long-to-float" />
+        <Key word = "long-to-int" />
+        <Key word = "monitor-enter" />
+        <Key word = "monitor-exit" />
+        <Key word = "move" />
+        <Key word = "move-exception" />
+        <Key word = "move-object" />
+        <Key word = "move-object/16" />
+        <Key word = "move-object/from16" />
+        <Key word = "move-result" />
+        <Key word = "move-result-object" />
+        <Key word = "move-result-wide" />
+        <Key word = "move-wide" />
+        <Key word = "move-wide/16" />
+        <Key word = "move-wide/from16" />
+        <Key word = "move/16" />
+        <Key word = "move/from16" />
+        <Key word = "mul-double" />
+        <Key word = "mul-double/2addr" />
+        <Key word = "mul-float" />
+        <Key word = "mul-float/2addr" />
+        <Key word = "mul-int" />
+        <Key word = "mul-int/2addr" />
+        <Key word = "mul-int/lit8" />
+        <Key word = "mul-int/lit16" />
+        <Key word = "mul-long" />
+        <Key word = "mul-long/2addr" />
+        <Key word = "neg-double" />
+        <Key word = "neg-float" />
+        <Key word = "neg-int" />
+        <Key word = "neg-long" />
+        <Key word = "new-array" />
+        <Key word = "new-instance" />
+        <Key word = "nop" />
+        <Key word = "not-int" />
+        <Key word = "not-long" />
+        <Key word = "or-int" />
+        <Key word = "or-int/2addr" />
+        <Key word = "or-int/lit16" />
+        <Key word = "or-int/lit8" />
+        <Key word = "or-long" />
+        <Key word = "or-long/2addr" />
+        <Key word = "rem-double" />
+        <Key word = "rem-double/2addr" />
+        <Key word = "rem-float" />
+        <Key word = "rem-float/2addr" />
+        <Key word = "rem-int" />
+        <Key word = "rem-int/2addr" />
+        <Key word = "rem-int/lit16" />
+        <Key word = "rem-int/lit8" />
+        <Key word = "rem-long" />
+        <Key word = "rem-long/2addr" />
+        <Key word = "return" />
+        <Key word = "return-object" />
+        <Key word = "return-void" />
+        <Key word = "return-wide" />
+        <Key word = "rsub-int" />
+        <Key word = "rsub-int/lit8" />
+        <Key word = "sget" />
+        <Key word = "sget-boolean" />
+        <Key word = "sget-byte" />
+        <Key word = "sget-char" />
+        <Key word = "sget-object" />
+        <Key word = "sget-short" />
+        <Key word = "sget-wide" />
+        <Key word = "shl-int" />
+        <Key word = "shl-int/2addr" />
+        <Key word = "shl-int/lit8" />
+        <Key word = "shl-long" />
+        <Key word = "shl-long/2addr" />
+        <Key word = "shr-int" />
+        <Key word = "shr-int/2addr" />
+        <Key word = "shr-int/lit8" />
+        <Key word = "shr-long" />
+        <Key word = "shr-long/2addr" />
+        <Key word = "sparse-switch" />
+        <Key word = "sput" />
+        <Key word = "sput-boolean" />
+        <Key word = "sput-byte" />
+        <Key word = "sput-char" />
+        <Key word = "sput-object" />
+        <Key word = "sput-short" />
+        <Key word = "sput-wide" />
+        <Key word = "sub-double" />
+        <Key word = "sub-double/2addr" />
+        <Key word = "sub-float" />
+        <Key word = "sub-float/2addr" />
+        <Key word = "sub-int" />
+        <Key word = "sub-int/2addr" />
+        <Key word = "sub-int/lit16" />
+        <Key word = "sub-int/lit8" />
+        <Key word = "sub-long" />
+        <Key word = "sub-long/2addr" />
+        <Key word = "throw" />
+        <Key word = "throw-verification-error" />
+        <Key word = "ushr-int" />
+        <Key word = "ushr-int/2addr" />
+        <Key word = "ushr-int/lit8" />
+        <Key word = "ushr-long" />
+        <Key word = "ushr-long/2addr" />
+        <Key word = "xor-int" />
+        <Key word = "xor-int/2addr" />
+        <Key word = "xor-int/lit16" />
+        <Key word = "xor-int/lit8" />
+        <Key word = "xor-long" />
+        <Key word = "xor-long/2addr" />
+      </KeyWords>
+
+		</RuleSet>
+	</RuleSets>
+</SyntaxDefinition>
+

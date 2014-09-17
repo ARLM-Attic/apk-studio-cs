@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00223AA6-4343-4AB0-9428-7859D12094C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APKStudio.Resource</RootNamespace>
+    <AssemblyName>resource</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constant.cs" />
+    <Compile Include="Font.cs" />
+    <Compile Include="Images.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font_courier.TTF" />
+    <None Include="Resources\font_droidsansmono.ttf" />
+    <None Include="Resources\font_inconsolata.ttf" />
+    <None Include="Resources\icon_application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_author.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_console.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_explorer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_goto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_hierarchy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_linenumbers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_manifest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_saveas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_about_application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_about_author.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_build_export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_build_manifest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_build_package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_build_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_build_zipalign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_goto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_ind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_edit_undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_file_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_file_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_package_open_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_application_logo_all.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_application_logo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_application_logo_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_application_logo_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_application_logo_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_application_logo_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_application_logo_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_application_logo_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_file_apk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_file_java.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_file_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_file_raw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_file_rsa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_file_smali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_file_xml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_asset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_binary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_certificate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_raw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_root.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_smali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_values.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_package_closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_package_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_drawable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_file_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_menu_file_open_directory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_context_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_context_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_context_property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_context_rename.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_source.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tree_folder_resource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash_application_main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_container_about.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
